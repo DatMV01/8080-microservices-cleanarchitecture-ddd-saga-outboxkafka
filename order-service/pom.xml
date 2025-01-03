@@ -13,7 +13,7 @@
         <module>order-service-domain</module>
         <module>order-service-infrastructure</module>
         <module>order-service-application</module>
-        <module>order-service-start</module>
+        <module>order-service-presentation</module>
     </modules>
 
     <parent>

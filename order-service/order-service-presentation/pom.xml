@@ -8,10 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>order-service-start</artifactId>
+    <artifactId>order-service-presentation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>order-service-start</name>
-    <description>order-service-start</description>
+    <name>order-service-presentation</name>
+    <description>order-service-presentation</description>
 
     <url/>
     <licenses>

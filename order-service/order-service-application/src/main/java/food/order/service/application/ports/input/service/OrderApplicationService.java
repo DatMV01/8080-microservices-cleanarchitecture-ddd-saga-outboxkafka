@@ -1,6 +1,6 @@
 package food.order.service.application.ports.input.service;
 
-import food.order.service.application.dto.create.CreateOrderCommand;
+import food.order.service.application.cqrs.commands.CreateOrderCommand;
 import food.order.service.application.dto.create.CreateOrderResponse;
 import food.order.service.application.dto.track.TrackOrderQuery;
 import food.order.service.application.dto.track.TrackOrderResponse;

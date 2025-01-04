@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package food.order.service.infrastructure.kafka.model;
+package food.order.common.infrastructure.kafka.model;
 
 import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -3492272349209460118L;
+  private static final long serialVersionUID = -3429433180240954539L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CustomerAvroModel\",\"namespace\":\"food.order.service.infrastructure.kafka.model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"logicalType\":\"uuid\"}},{\"name\":\"username\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"firstName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"CustomerAvroModel\",\"namespace\":\"food.order.common.infrastructure.kafka.model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"logicalType\":\"uuid\"}},{\"name\":\"username\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"firstName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}},{\"name\":\"lastName\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"}}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -210,8 +210,8 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
    * Creates a new CustomerAvroModel RecordBuilder.
    * @return A new CustomerAvroModel RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder() {
-    return new food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder();
+  public static food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder() {
+    return new food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder();
   }
 
   /**
@@ -219,11 +219,11 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
    * @param other The existing builder to copy.
    * @return A new CustomerAvroModel RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder(food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder other) {
+  public static food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder(food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder other) {
     if (other == null) {
-      return new food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder();
+      return new food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder();
     } else {
-      return new food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder(other);
+      return new food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder(other);
     }
   }
 
@@ -232,11 +232,11 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
    * @param other The existing instance to copy.
    * @return A new CustomerAvroModel RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder(food.order.service.infrastructure.kafka.model.CustomerAvroModel other) {
+  public static food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder newBuilder(food.order.common.infrastructure.kafka.model.CustomerAvroModel other) {
     if (other == null) {
-      return new food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder();
+      return new food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder();
     } else {
-      return new food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder(other);
+      return new food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder(other);
     }
   }
 
@@ -261,7 +261,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder other) {
+    private Builder(food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -285,7 +285,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
      * Creates a Builder by copying an existing CustomerAvroModel instance
      * @param other The existing instance to copy.
      */
-    private Builder(food.order.service.infrastructure.kafka.model.CustomerAvroModel other) {
+    private Builder(food.order.common.infrastructure.kafka.model.CustomerAvroModel other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -319,7 +319,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder setId(java.lang.String value) {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder setId(java.lang.String value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -339,7 +339,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder clearId() {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -359,7 +359,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * @param value The value of 'username'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder setUsername(java.lang.String value) {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder setUsername(java.lang.String value) {
       validate(fields()[1], value);
       this.username = value;
       fieldSetFlags()[1] = true;
@@ -379,7 +379,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * Clears the value of the 'username' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder clearUsername() {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder clearUsername() {
       username = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -399,7 +399,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * @param value The value of 'firstName'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder setFirstName(java.lang.String value) {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder setFirstName(java.lang.String value) {
       validate(fields()[2], value);
       this.firstName = value;
       fieldSetFlags()[2] = true;
@@ -419,7 +419,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * Clears the value of the 'firstName' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder clearFirstName() {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder clearFirstName() {
       firstName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -439,7 +439,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * @param value The value of 'lastName'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder setLastName(java.lang.String value) {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder setLastName(java.lang.String value) {
       validate(fields()[3], value);
       this.lastName = value;
       fieldSetFlags()[3] = true;
@@ -459,7 +459,7 @@ public class CustomerAvroModel extends org.apache.avro.specific.SpecificRecordBa
       * Clears the value of the 'lastName' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.CustomerAvroModel.Builder clearLastName() {
+    public food.order.common.infrastructure.kafka.model.CustomerAvroModel.Builder clearLastName() {
       lastName = null;
       fieldSetFlags()[3] = false;
       return this;

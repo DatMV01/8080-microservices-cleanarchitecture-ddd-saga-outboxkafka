@@ -1,7 +1,7 @@
 {
-    "namespace": "food.order.service.infrastructure.kafka.model",
+    "namespace": "food.order.common.infrastructure.kafka.model",
     "type": "record",
-    "name": "RestaurantApprovalRequestAvroModel",
+    "name": "PaymentResponseAvroModel",
     "fields": [
         {
             "name": "id",
@@ -18,7 +18,14 @@
             }
         },
         {
-            "name": "restaurantId",
+            "name": "paymentId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "customerId",
             "type": {
                 "type": "string",
                 "logicalType": "uuid"
@@ -29,28 +36,6 @@
             "type": {
                 "type": "string",
                 "logicalType": "uuid"
-            }
-        },
-        {
-            "name": "restaurantOrderStatus",
-            "type": {
-                  "type": "enum",
-                  "name": "RestaurantOrderStatus",
-                  "symbols": ["PAID"]
-            }
-        },
-        {
-            "name": "products",
-            "type": {
-                "type": "array",
-                "items":{
-                  "name":"Product",
-                  "type":"record",
-                  "fields":[
-                    {"name":"id", "type": "string", "logicalType": "uuid"},
-                    {"name":"quantity", "type": "int"}
-                   ]
-               }
             }
         },
         {
@@ -67,6 +52,23 @@
             "type": {
                 "type": "long",
                 "logicalType": "timestamp-millis"
+            }
+        },
+        {
+            "name": "paymentStatus",
+            "type": {
+                  "type": "enum",
+                  "name": "PaymentStatus",
+                  "symbols": ["COMPLETED", "CANCELLED", "FAILED"]
+               }
+        },
+        {
+            "name": "failureMessages",
+            "type": {
+                "type": "array",
+                "items":{
+                  "type":"string"
+               }
             }
         }
     ]

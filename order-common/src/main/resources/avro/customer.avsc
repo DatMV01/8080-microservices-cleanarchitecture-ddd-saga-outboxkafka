@@ -1,5 +1,5 @@
 {
-  "namespace": "food.order.service.infrastructure.kafka.model",
+  "namespace": "food.order.common.infrastructure.kafka.model",
   "type": "record",
   "name": "CustomerAvroModel",
   "fields": [

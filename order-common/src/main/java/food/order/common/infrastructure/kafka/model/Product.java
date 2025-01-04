@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package food.order.service.infrastructure.kafka.model;
+package food.order.common.infrastructure.kafka.model;
 
 import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
@@ -14,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class Product extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = 6223308379864058954L;
+  private static final long serialVersionUID = -7890923651791337161L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Product\",\"namespace\":\"food.order.service.infrastructure.kafka.model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"logicalType\":\"uuid\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Product\",\"namespace\":\"food.order.common.infrastructure.kafka.model\",\"fields\":[{\"name\":\"id\",\"type\":{\"type\":\"string\",\"avro.java.string\":\"String\"},\"logicalType\":\"uuid\"},{\"name\":\"quantity\",\"type\":\"int\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();
@@ -152,8 +152,8 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Product RecordBuilder.
    * @return A new Product RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.Product.Builder newBuilder() {
-    return new food.order.service.infrastructure.kafka.model.Product.Builder();
+  public static food.order.common.infrastructure.kafka.model.Product.Builder newBuilder() {
+    return new food.order.common.infrastructure.kafka.model.Product.Builder();
   }
 
   /**
@@ -161,11 +161,11 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Product RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.Product.Builder newBuilder(food.order.service.infrastructure.kafka.model.Product.Builder other) {
+  public static food.order.common.infrastructure.kafka.model.Product.Builder newBuilder(food.order.common.infrastructure.kafka.model.Product.Builder other) {
     if (other == null) {
-      return new food.order.service.infrastructure.kafka.model.Product.Builder();
+      return new food.order.common.infrastructure.kafka.model.Product.Builder();
     } else {
-      return new food.order.service.infrastructure.kafka.model.Product.Builder(other);
+      return new food.order.common.infrastructure.kafka.model.Product.Builder(other);
     }
   }
 
@@ -174,11 +174,11 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Product RecordBuilder
    */
-  public static food.order.service.infrastructure.kafka.model.Product.Builder newBuilder(food.order.service.infrastructure.kafka.model.Product other) {
+  public static food.order.common.infrastructure.kafka.model.Product.Builder newBuilder(food.order.common.infrastructure.kafka.model.Product other) {
     if (other == null) {
-      return new food.order.service.infrastructure.kafka.model.Product.Builder();
+      return new food.order.common.infrastructure.kafka.model.Product.Builder();
     } else {
-      return new food.order.service.infrastructure.kafka.model.Product.Builder(other);
+      return new food.order.common.infrastructure.kafka.model.Product.Builder(other);
     }
   }
 
@@ -201,7 +201,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(food.order.service.infrastructure.kafka.model.Product.Builder other) {
+    private Builder(food.order.common.infrastructure.kafka.model.Product.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -217,7 +217,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Product instance
      * @param other The existing instance to copy.
      */
-    private Builder(food.order.service.infrastructure.kafka.model.Product other) {
+    private Builder(food.order.common.infrastructure.kafka.model.Product other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -243,7 +243,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.Product.Builder setId(java.lang.String value) {
+    public food.order.common.infrastructure.kafka.model.Product.Builder setId(java.lang.String value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -263,7 +263,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.Product.Builder clearId() {
+    public food.order.common.infrastructure.kafka.model.Product.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -283,7 +283,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'quantity'.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.Product.Builder setQuantity(int value) {
+    public food.order.common.infrastructure.kafka.model.Product.Builder setQuantity(int value) {
       validate(fields()[1], value);
       this.quantity = value;
       fieldSetFlags()[1] = true;
@@ -303,7 +303,7 @@ public class Product extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'quantity' field.
       * @return This builder.
       */
-    public food.order.service.infrastructure.kafka.model.Product.Builder clearQuantity() {
+    public food.order.common.infrastructure.kafka.model.Product.Builder clearQuantity() {
       fieldSetFlags()[1] = false;
       return this;
     }

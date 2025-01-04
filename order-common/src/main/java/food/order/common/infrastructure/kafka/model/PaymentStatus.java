@@ -3,11 +3,11 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package food.order.service.infrastructure.kafka.model;
+package food.order.common.infrastructure.kafka.model;
 @org.apache.avro.specific.AvroGenerated
 public enum PaymentStatus implements org.apache.avro.generic.GenericEnumSymbol<PaymentStatus> {
   COMPLETED, CANCELLED, FAILED  ;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"enum\",\"name\":\"PaymentStatus\",\"namespace\":\"food.order.service.infrastructure.kafka.model\",\"symbols\":[\"COMPLETED\",\"CANCELLED\",\"FAILED\"]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"enum\",\"name\":\"PaymentStatus\",\"namespace\":\"food.order.common.infrastructure.kafka.model\",\"symbols\":[\"COMPLETED\",\"CANCELLED\",\"FAILED\"]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
   public org.apache.avro.Schema getSchema() { return SCHEMA$; }
 }

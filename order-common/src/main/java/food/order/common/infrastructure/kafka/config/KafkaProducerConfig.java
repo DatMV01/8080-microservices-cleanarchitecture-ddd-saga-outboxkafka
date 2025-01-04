@@ -1,4 +1,4 @@
-package food.order.service.infrastructure.kafka.config;
+package food.order.common.infrastructure.kafka.config;
 
 import org.apache.avro.specific.SpecificRecordBase;
 import org.apache.kafka.clients.producer.ProducerConfig;

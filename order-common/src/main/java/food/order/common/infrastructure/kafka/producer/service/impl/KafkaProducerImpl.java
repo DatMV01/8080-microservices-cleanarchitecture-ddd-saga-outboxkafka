@@ -1,7 +1,7 @@
-package food.order.service.infrastructure.kafka.producer.service.impl;
+package food.order.common.infrastructure.kafka.producer.service.impl;
 
-import food.order.service.infrastructure.kafka.producer.exception.KafkaProducerException;
-import food.order.service.infrastructure.kafka.producer.service.KafkaProducer;
+import food.order.common.infrastructure.kafka.producer.exception.KafkaProducerException;
+import food.order.common.infrastructure.kafka.producer.service.KafkaProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.avro.specific.SpecificRecordBase;
 import org.springframework.kafka.KafkaException;

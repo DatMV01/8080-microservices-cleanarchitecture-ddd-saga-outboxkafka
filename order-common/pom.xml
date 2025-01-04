@@ -30,7 +30,6 @@
         <spring.boot.version>2.5.14</spring.boot.version>
     </properties>
 
-
     <repositories>
         <repository>
             <id>confluent</id>
@@ -86,6 +85,11 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>food.order</groupId>
+            <artifactId>order-service-application</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

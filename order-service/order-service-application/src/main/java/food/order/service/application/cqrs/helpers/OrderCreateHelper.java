@@ -13,6 +13,7 @@ import food.order.service.domain.aggregate.RestaurantAggregate;
 import food.order.service.domain.event.OrderCreatedEvent;
 import food.order.service.domain.exception.OrderDomainException;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -36,8 +37,8 @@ public class OrderCreateHelper {
 
     public OrderCreateHelper(OrderDomainService orderDomainService,
                              OrderRepository orderRepository,
-                             CustomerRepository customerRepository,
-                             RestaurantRepository restaurantRepository,
+                             @Autowired(required = false) CustomerRepository customerRepository,
+                             @Autowired(required = false) RestaurantRepository restaurantRepository,
                              OrderDataMapper orderDataMapper,
                              OrderCreatedPaymentRequestMessagePublisher orderCreatedEventDomainEventPublisher) {
         this.orderDomainService = orderDomainService;
@@ -47,7 +48,7 @@ public class OrderCreateHelper {
         this.orderDataMapper = orderDataMapper;
         this.orderCreatedEventDomainEventPublisher = orderCreatedEventDomainEventPublisher;
     }
-    
+
     @Transactional
     public OrderCreatedEvent persistOrder(CreateOrderCommand createOrderCommand) {
         checkCustomer(createOrderCommand.getCustomerId());

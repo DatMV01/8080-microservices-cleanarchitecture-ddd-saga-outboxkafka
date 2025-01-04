@@ -1,0 +1,11 @@
+spring:
+  application:
+    name:order-service-presentation
+
+
+server:
+  port: 8181
+
+logging:
+  level:
+    web: debug

@@ -1,5 +1,8 @@
 package food.order.service.infrastructure.dataaccess.order.mapper;
 
+import food.order.common.domain.valueobject.CustomerId;
+import food.order.common.domain.valueobject.Money;
+import food.order.common.domain.valueobject.OrderId;
 import food.order.service.domain.aggregate.OrderAggregate;
 import food.order.service.domain.entitiy.OrderItem;
 import food.order.service.domain.entitiy.Product;

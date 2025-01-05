@@ -13,6 +13,7 @@
     <modules>
         <module>order-service</module>
         <module>order-common</module>
+        <module>order-payment</module>
     </modules>
 
     <properties>

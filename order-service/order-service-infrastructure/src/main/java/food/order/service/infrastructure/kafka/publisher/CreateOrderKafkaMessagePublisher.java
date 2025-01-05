@@ -1,6 +1,6 @@
 package food.order.service.infrastructure.kafka.publisher;
 
-import food.order.common.infrastructure.kafka.mapper.OrderMessagingDataMapper;
+import food.order.service.infrastructure.kafka.mapper.OrderMessagingDataMapper;
 import food.order.common.infrastructure.kafka.model.PaymentRequestAvroModel;
 import food.order.common.infrastructure.kafka.producer.KafkaMessageHelper;
 import food.order.common.infrastructure.kafka.producer.service.KafkaProducer;

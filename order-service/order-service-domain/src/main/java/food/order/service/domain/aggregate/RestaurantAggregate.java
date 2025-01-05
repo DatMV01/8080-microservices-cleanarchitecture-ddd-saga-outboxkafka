@@ -1,5 +1,6 @@
 package food.order.service.domain.aggregate;
 
+import food.order.common.domain.aggregate.AggregateRoot;
 import food.order.service.domain.entitiy.Product;
 import food.order.service.domain.valueobject.RestaurantId;
 

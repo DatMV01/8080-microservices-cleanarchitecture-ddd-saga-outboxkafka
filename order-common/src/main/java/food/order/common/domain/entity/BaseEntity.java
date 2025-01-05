@@ -1,4 +1,4 @@
-package food.order.service.domain.entitiy;
+package food.order.common.domain.entity;
 
 import java.time.ZonedDateTime;
 import java.util.Objects;

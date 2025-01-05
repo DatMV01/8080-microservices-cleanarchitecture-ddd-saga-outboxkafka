@@ -1,7 +1,7 @@
 package food.order.service.infrastructure.kafka.listener;
 
 import food.order.common.infrastructure.kafka.consumer.KafkaConsumer;
-import food.order.common.infrastructure.kafka.mapper.OrderMessagingDataMapper;
+import food.order.service.infrastructure.kafka.mapper.OrderMessagingDataMapper;
 import food.order.common.infrastructure.kafka.model.OrderApprovalStatus;
 import food.order.common.infrastructure.kafka.model.RestaurantApprovalResponseAvroModel;
 import food.order.service.application.ports.input.message.restaurant.RestaurantApprovalResponseMessageListener;

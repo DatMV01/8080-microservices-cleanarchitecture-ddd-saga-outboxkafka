@@ -1,12 +1,12 @@
-package food.order.common.infrastructure.kafka.mapper;
+package food.order.service.infrastructure.kafka.mapper;
 
+import food.order.common.infrastructure.kafka.model.*;
 import food.order.service.application.dto.message.PaymentResponse;
 import food.order.service.application.dto.message.RestaurantApprovalResponse;
 import food.order.service.domain.aggregate.OrderAggregate;
 import food.order.service.domain.event.OrderCancelledEvent;
 import food.order.service.domain.event.OrderCreatedEvent;
 import food.order.service.domain.event.OrderPaidEvent;
-import food.order.common.infrastructure.kafka.model.*;
 import org.springframework.stereotype.Component;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package food.order.service.domain.valueobject;
+package food.order.common.domain.valueobject;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

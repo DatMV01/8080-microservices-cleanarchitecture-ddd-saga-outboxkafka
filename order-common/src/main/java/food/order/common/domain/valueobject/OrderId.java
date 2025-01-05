@@ -1,6 +1,4 @@
-package food.order.service.domain.valueobject;
-
-import food.order.common.domain.valueobject.BaseId;
+package food.order.common.domain.valueobject;
 
 import java.util.UUID;
 

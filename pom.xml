@@ -14,6 +14,7 @@
         <module>order-service</module>
         <module>order-common</module>
         <module>order-payment</module>
+        <module>order-restaurant</module>
     </modules>
 
     <properties>

@@ -1,10 +1,10 @@
-package food.order.orderpaymentpresentation;
+package food.order.restaurant.presentation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OrderPaymentPresentationApplicationTests {
+class OrderRestaurantPresentationApplicationTests {
 
     @Test
     void contextLoads() {

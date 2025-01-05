@@ -2,7 +2,7 @@ package food.order.service.domain.entitiy;
 
 import food.order.common.domain.entity.BaseEntity;
 import food.order.common.domain.valueobject.Money;
-import food.order.service.domain.valueobject.ProductId;
+import food.order.common.domain.valueobject.ProductId;
 
 public class Product extends BaseEntity<ProductId> {
     private String name;

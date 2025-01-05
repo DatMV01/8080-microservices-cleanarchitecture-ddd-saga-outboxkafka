@@ -1,9 +1,6 @@
 package food.order.service.application;
 
-import food.order.common.domain.valueobject.CustomerId;
-import food.order.common.domain.valueobject.Money;
-import food.order.common.domain.valueobject.OrderId;
-import food.order.common.domain.valueobject.OrderStatus;
+import food.order.common.domain.valueobject.*;
 import food.order.service.application.cqrs.commands.CreateOrderCommand;
 import food.order.service.application.dto.create.CreateOrderResponse;
 import food.order.service.application.dto.create.OrderAddressDTO;
@@ -18,7 +15,6 @@ import food.order.service.domain.aggregate.OrderAggregate;
 import food.order.service.domain.aggregate.RestaurantAggregate;
 import food.order.service.domain.entitiy.Product;
 import food.order.service.domain.exception.OrderDomainException;
-import food.order.service.domain.valueobject.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;

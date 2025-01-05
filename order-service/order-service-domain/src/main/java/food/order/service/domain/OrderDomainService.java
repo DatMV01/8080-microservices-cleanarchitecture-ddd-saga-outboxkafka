@@ -5,7 +5,7 @@ import food.order.service.domain.aggregate.RestaurantAggregate;
 import food.order.service.domain.event.OrderCancelledEvent;
 import food.order.service.domain.event.OrderCreatedEvent;
 import food.order.service.domain.event.OrderPaidEvent;
-import food.order.service.domain.event.publisher.DomainEventPublisher;
+import food.order.common.domain.event.publisher.DomainEventPublisher;
 
 import java.util.List;
 

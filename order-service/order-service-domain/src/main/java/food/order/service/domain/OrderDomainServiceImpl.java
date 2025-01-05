@@ -6,7 +6,7 @@ import food.order.service.domain.entitiy.Product;
 import food.order.service.domain.event.OrderCancelledEvent;
 import food.order.service.domain.event.OrderCreatedEvent;
 import food.order.service.domain.event.OrderPaidEvent;
-import food.order.service.domain.event.publisher.DomainEventPublisher;
+import food.order.common.domain.event.publisher.DomainEventPublisher;
 import food.order.service.domain.exception.OrderDomainException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

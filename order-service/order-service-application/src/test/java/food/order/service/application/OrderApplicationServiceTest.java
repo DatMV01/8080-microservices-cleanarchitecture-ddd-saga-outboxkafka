@@ -1,5 +1,6 @@
 package food.order.service.application;
 
+import food.order.common.domain.valueobject.OrderStatus;
 import food.order.service.application.cqrs.commands.CreateOrderCommand;
 import food.order.service.application.dto.create.CreateOrderResponse;
 import food.order.service.application.dto.create.OrderAddressDTO;

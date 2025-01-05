@@ -1,7 +1,7 @@
 package food.order.service.domain.event;
 
 import food.order.service.domain.aggregate.OrderAggregate;
-import food.order.service.domain.event.publisher.DomainEventPublisher;
+import food.order.common.domain.event.publisher.DomainEventPublisher;
 
 import java.time.ZonedDateTime;
 

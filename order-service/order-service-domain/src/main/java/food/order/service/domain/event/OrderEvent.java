@@ -1,5 +1,6 @@
 package food.order.service.domain.event;
 
+import food.order.common.domain.event.DomainEvent;
 import food.order.service.domain.aggregate.OrderAggregate;
 
 import java.time.ZonedDateTime;

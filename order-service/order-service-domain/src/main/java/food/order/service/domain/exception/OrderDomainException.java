@@ -1,5 +1,7 @@
 package food.order.service.domain.exception;
 
+import food.order.common.domain.exception.DomainException;
+
 public class OrderDomainException extends DomainException {
 
     public OrderDomainException(String message) {

@@ -1,6 +1,6 @@
 package food.order.service.application.dto.create;
 
-import food.order.service.domain.valueobject.OrderStatus;
+import food.order.common.domain.valueobject.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

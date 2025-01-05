@@ -1,4 +1,4 @@
-package food.order.service.domain.event;
+package food.order.common.domain.event;
 
 public interface DomainEvent<T> {
     void fire();

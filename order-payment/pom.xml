@@ -17,6 +17,7 @@
 
     <modules>
         <module>order-payment-domain</module>
+        <module>order-payment-application</module>
     </modules>
 
 

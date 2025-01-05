@@ -1,6 +1,7 @@
 package food.order.service.infrastructure.dataaccess.order.entity;
 
 import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -14,7 +15,11 @@ import java.util.UUID;
 @Table(name = "order_address")
 @Entity
 public class OrderAddressEntity {
+
     @Id
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Column(columnDefinition = "BINARY(16)")
     private UUID id;
 
     @OneToOne(cascade = CascadeType.ALL)

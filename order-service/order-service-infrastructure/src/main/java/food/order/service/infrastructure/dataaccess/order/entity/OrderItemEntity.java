@@ -1,6 +1,7 @@
 package food.order.service.infrastructure.dataaccess.order.entity;
 
 import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -16,14 +17,20 @@ import java.util.UUID;
 @Table(name = "order_items")
 @Entity
 public class OrderItemEntity {
+
     @Id
     private Long id;
+
     @Id
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "ORDER_ID")
     private OrderEntity order;
 
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @Column(columnDefinition = "BINARY(16)")
     private UUID productId;
+
     private BigDecimal price;
     private Integer quantity;
     private BigDecimal subTotal;

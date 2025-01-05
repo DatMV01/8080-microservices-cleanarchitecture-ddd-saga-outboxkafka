@@ -1,4 +1,4 @@
-package food.order.orderrestaurantpresentation;
+package food.order.restaurant.presentation;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
